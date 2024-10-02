@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table,
+    tr,
+    td{
+    border: 2px solid;
+    border-collapse: collapse;
+} 
+</style>
+<body>
+    <h2 style="color: blue;">task-1</h2>
+    <script>
+        let pone =document.createElement("p");
+        pone.innerText="WELCOME TO JAVASCRIPT DOM MANIPULATION."
+        pone.style.fontFamily.fontcolor="timenewroman,"
+        document.body.appendChild(pone);
+        pone.style.backgroundColor="orange"
+
+    </script>
+        <h2 style="color: blue;">task-2</h2>
+   <script>
+        let div=document.createElement("div");
+        let h1=document.createElement("h1");
+        let h2=document.createElement("h2");
+        h1.innerText="mainheading";
+        h2.innerText="subheading";
+        div.appendChild(h1);
+        div.appendChild(h2);
+        document.body.appendChild(div);
+        div.style.backgroundColor="orange"
+
+  </script>
+      <h2 style="color: blue;">task-3</h2>
+   <script>
+  let ul=document.createElement("ul");
+  let lione=document.createElement("li");
+  let litwo=document.createElement("li");
+  let lithree=document.createElement("li");
+  lione.innerText="one";
+  litwo.innerText="two";
+  lithree.innerText="two";
+  ul.appendChild(lione);
+  ul.appendChild(litwo);
+  ul.appendChild(lithree);
+  document.body.appendChild(ul)
+  ul.style.backgroundColor="orange"
+</script>
+     <h2 style="color: blue;">task-4</h2>
+<script>
+    let table=document.createElement("table");
+    let row1=document.createElement("tr");
+    let row2=document.createElement("tr");
+    // row-1
+    let row1td1=document.createElement("td");
+     let row1td2=document.createElement("td");
+    //  row-2
+    let row2td1=document.createElement("td");
+    let row2td2=document.createElement("td");
+    // inner text
+    row1td1.innerText="bhavani";
+    row1td2.innerText="sumatha";
+    row2td1.innerText="praveen";
+    row2td2.innerText="kanna";
+    // appendChild row-1 to row1td1 and row2td2
+    row1.appendChild(row1td1);
+    row1.appendChild(row1td2);
+     // appendChild row-2 to row2td1 and row2td2
+    row2.appendChild(row2td1);
+    row2.appendChild(row2td2);
+    // appendChild row-1&row2
+   table.appendChild(row1);
+   table.appendChild(row2);
+   document.body.appendChild(table);
+   table.style.backgroundColor="orange"
+
+  </script>
+      <h2 style="color: blue;">task-5</h2>
+
+   <br>
+ <script>
+    const divone=document.createElement("div");
+    let img=document.createElement("img");
+    img.src="https://cdn.pixabay.com/photo/2024/03/05/22/04/bird-8615360_1280.jpg";
+    img.alt = "Placehold"; 
+    img.width = 300; 
+    img.height = 200; 
+    let p=document.createElement("p");
+     p.innerText="some text";
+     divone.appendChild(img);
+     divone.appendChild(p);
+    document.body.appendChild(divone)
+    divone.style.backgroundColor="orange"
+
+ </script>
+ <h2 style="color: blue;">task-6</h2>
+ <!-- task-6 -->
+ <script>
+        let mainOL=document.createElement("ol");
+        let mainitem1=document.createElement("li");
+        mainitem1.innerText = "First item";
+        let mainitem2=document.createElement("li");
+        // nested-1
+        let nested=document.createElement("ol");
+        let nesteditem1=document.createElement("li");
+        let nesteditem2=document.createElement("li");
+        mainitem2.innerText = "second item";
+        nesteditem1.innerText = "Nested item 1";
+        nesteditem2.innerText = "Nested item 2";
+        // appendChild
+         mainOL.appendChild(mainitem1);
+         mainOL.appendChild(mainitem2);
+        //  appendChild
+        nested.appendChild(nesteditem1);
+        nested.appendChild(nesteditem2);
+        // finally
+        mainOL.appendChild(nested);
+        document.body.appendChild(mainOL);
+        // document.body.appendChild(nested);
+        mainOL.style.backgroundColor="orange"
+
+     </script>
+     <!-- task-7 -->
+ <h2 style="color: blue;">task-7</h2>
+
+<script>
+        let section=document.createElement("section");
+        let heading2=document.createElement("heading2");
+        let p1=document.createElement("p");
+        // innerText
+        heading2.innerText="happy day";
+        p1.innerText="have a nice day";
+        section.style.backgroundColor="red"
+        // appendChild
+        section.appendChild(heading2);
+        section.appendChild(p1);
+        document.body.appendChild(section);
+ </script>
+ <!-- task-8 -->
+ <h2 style="color: blue;">task-8</h2>
+<script>
+  let dl=document.createElement('dl');
+  let dt1=document.createElement("dt");
+  let dt2=document.createElement("dt");
+  let dt3=document.createElement("dt");
+  let dd1=document.createElement("dd");
+  let dd2=document.createElement("dd");
+  let dd3=document.createElement("dd");
+  dt1.innerText="hi";
+  dt2.innerText="hello";
+  dt3.innerText="how are";
+  dd1.innerText="fine";
+  dd2.innerText="good";
+  dd3.innerText="not bad";
+//   appendChild
+dl.appendChild(dt1);
+dl.appendChild(dt2);
+dl.appendChild(dt3);
+dl.appendChild(dd1);
+dl.appendChild(dd2);
+dl.appendChild(dd3);
+document.body.appendChild(dl);
+dl.style.backgroundColor="orange"
+
+
+</script>
+<h2 style="color: blue;">task-9</h2>
+ <script>
+let div1=document.createElement('div1');
+let blockquote=document.createElement("blockquote");
+blockquote.innerText="whitequotes";
+div1.appendChild(blockquote);
+document.body.appendChild(div1);
+blockquote.style.backgroundColor="pink"
+</script>
+<h2 style="color: blue;">task-10</h2>
+<script>
+    let divtwo=document.createElement('div');
+    let p5=document.createElement('p');
+    let p2=document.createElement('p');
+    let p3=document.createElement('p');
+    p1.innerText="AMMA";
+    p2.innerText="Nanna";
+    p3.innerText="sister and brother";
+    divtwo.appendChild(p1);
+    divtwo.appendChild(p2);
+    divtwo.appendChild(p3);
+    document.body.appendChild(divtwo);
+    divtwo.style.backgroundColor="orange"
+
+    
+</script>
+
+
+
+
+
+    
+</body>
+</html>

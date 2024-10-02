@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+        background-image:linear-gradient(rgb(241, 97, 45),rgb(0, 130, 117),rgb(231, 223, 225));
+        }
+    </style>
+</head>
+<body>
+<script>
+      const arr = ["apple", "banana", "grape", "watermelon", "kiwi", "strawberry"]; 
+        const result= arr.filter((element) => {
+            if(element.length > 5){
+                return element;
+            }
+        })
+        console.log(result);
+        let uu = document.createElement('ul');
+        
+        result.forEach((i) => {
+            let li = document.createElement('li');
+            li.innerHTML = i;
+            uu.appendChild(li);
+        })
+        document.body.appendChild(uu);
+
+</script>
+<script >
+    const someThing = ["hello", "world", "javascript", "dom"];
+    let resu = someThing.map((element)=>{
+        return element.toUpperCase();
+    })
+    console.log(resu);
+    let p = document.createElement('p');
+    // for(x of result){
+    //     p.innerHTML += x+" ";
+    //     document.body.appendChild(p);
+    // }
+    resu.forEach((element) =>{
+        p.innerHTML += element+" ";
+        document.body.appendChild(p);
+    })
+</script>
+<script>
+    const coder = ["I", "am", "learning", "JavaScript", "today"];
+    let res = coder.join(' ');
+    console.log(res);
+    let div = document.createElement('div');
+    div.innerHTML = `${res}`;
+    document.body.appendChild(div);
+</script>
+
+<script>
+    const animals = ["dog", "cat", "bird", "fish"];
+    const rew = animals.map((element,index)=>{
+         return element.split('').reverse().join('');
+    })
+    console.log(result);
+    let ul = document.createElement('ul');
+    for(i of rew){
+        let li = document.createElement('li');
+        li.innerHTML = `${i}`;
+        ul.appendChild(li);
+    }
+    document.body.appendChild(ul);
+
+</script>
+<script>
+    const fruits = ["apple", "banana", "grape"];
+    let ulu = document.createElement('ul');
+    const resul = fruits.map((element,index)=>{
+        c='';
+       for(i of element){
+            if(i == 'a'){
+                c += i.match(/a/gi);
+                
+            }
+            else if (i=='e'){
+                c += i.match(/e/gi);
+            }
+            else if (i=='i'){
+                c += i.match(/i/gi);
+
+            }
+            else if (i=='o'){
+                c += i.match(/o/gi);
+            }
+            else if (i=='u'){
+                c += i.match(/u/gi);
+            }
+       }
+       let li = document.createElement('li');
+       li.innerHTML = `${element} (${c.length}vowels)`;
+       ulu.appendChild(li);
+       document.body.appendChild(ulu);
+    })
+    
+</script>
+
+
+</body>
+</html>
